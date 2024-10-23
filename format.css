@@ -1,0 +1,144 @@
+/*Color Palette
+dda15e tan
+678d58 evergreen
+a6c48a sage green
+f6e7cb biege 
+dd9787 dusty rose
+1e2f23 dark green
+ef6f6c pink
+8f8073 grey
+a24936 burnt orange
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a6c48a;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #678d58;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+   font-size: 4rem;         
+    font-family: 'Unbounded', sans-serif; 
+    font-weight: bold;         
+    color: #a24936;            
+    text-align: center;       
+    margin: 10px 0; 
+}
+
+h2{
+   font-size: 2rem;           
+    font-family: 'Skew VF', sans-serif; 
+    font-weight: bold;      
+    color: #1e2f23;            
+    text-align: left;        
+    margin: 15px 0;
+    border-bottom: 2px solid #8f8073;
+}
+
+p{
+   font-size: 1.5rem;           
+    font-family: 'Unbounded', sans-serif; 
+    font-weight: bold;      
+    color: #1e2f23;            
+    text-align: center;      
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffd700;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: beige;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.grid-item p {
+    margin-top: 10px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #678d58;
+    color: white;
+    position: relative;
+    bottom: 0;
+}
+
+@media (max-width: 1024px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
